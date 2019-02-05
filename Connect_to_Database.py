@@ -26,7 +26,6 @@ def doQuery( conn ) :
 # Connecting to Postgresql Database
 # Pull data from PostgresDatabase
 # Run the following pip install command in command prompt to get the library "pip install psycopg2" (without quotes)
-        
 print ("Using psycopg2…")
 import psycopg2
 myConnection = psycopg2.connect( host=hostname, user=username, password=password, dbname=database )
@@ -61,6 +60,7 @@ myConnection.close()
 
 
 # Connecting to MSSQL
+# Run the following pip install command in command prompt to get the library "pip install pymssql" (without quotes)
 import pymssql
 import os.path
 
