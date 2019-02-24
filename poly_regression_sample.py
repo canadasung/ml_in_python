@@ -1,4 +1,6 @@
 # Polynomial Regression
+# Helpful to deal with non-linear relationships
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
