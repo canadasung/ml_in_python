@@ -27,6 +27,14 @@ myConnection.close()
 # Read Data from Local Drive
 new_df = pd.read_csv("C:/Users/user_name/Documents/your_file.csv")
 
+# Show Specific Columns from DataFrame
+new_df['column_name'] # single
+new_df[['column_name1','column_name2','column_name3']] # multiple
+
+# Show Specific Rows from DataFrame
+new_df.loc['row_index_name'] # using index name
+new_df.iloc['row_index_number'] # using index number
+
 # DataFrame Information
 new_df.info()
 new_df = new_df.sort_values(by = ['column_name'], ascending = False)
@@ -86,4 +94,27 @@ final2.column_name.iloc[36650:76650] = 8
 # Remove rows with the given thresh number of na columns
 # In this example, a row would be removed if contains 5 or more na cells
 final2.dropna(thresh = 5, inplace=True)
+
+
+
+
+
+# Between Python List and NumPy Array Comparison
+# Reference: https://python.plainenglish.io/python-list-vs-numpy-array-whats-the-difference-7308cd4b52f6
+
+# Similarities #
+# 1. They both use square brackets ([])
+# 2. Both data types are mutable
+# 3. Both can be indexed and can be used for slicing operations
+
+# Differences #
+# 1. A list cannot directly handle a mathematical operations, while array can
+# 2. An array consumes less memory than a list
+# 3. Using an array is faster than a list
+# 4. A list is easier to modify
+# 5. A list can consist of different nested data size
+# 6. A list can store different data types
+
+
+
 
